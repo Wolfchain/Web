@@ -1,0 +1,64 @@
+/* static/tailwind.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+.no-scrollbar::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar,
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  overflow: hidden;
+}
+
+.dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  transform: translate(0) scale(1);
+  visibility: visible;
+}
+
+.dropdown:focus-within #AssetSelector {
+  z-index: 40;
+}
+
+.text-color {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to left, #eb1584, #2166c1, #80ffa8);
+  color: transparent;
+}
+
+.holo {
+  background: linear-gradient(to left, #eb1584, #2166c1, #80ffa8);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+.bg-noise {
+    background:#454545 url("/noisy.png") !important;
+}
+.glass {
+  background: rgba(15, 14, 19, 0.9); 
+  box-shadow: 0 8px 32px 0 rgba(15, 14, 19, 0.37); /*rgba(41, 81, 227, 0.37); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.white-glass {
+    background: rgba(15, 14, 19, 0.8); 
+    box-shadow: 0 8px 32px 0 rgba(15, 14, 19, 0.37); /*rgba(41, 81, 227, 0.37); */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
