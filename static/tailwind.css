@@ -47,18 +47,25 @@ body {
   background-blend-mode: screen, color-dodge, overlay, difference, normal;
 }
 .bg-noise {
-    background:#454545 url("/noisy.png") !important;
+  background: #454545 url("/noisy.png") !important;
 }
 .glass {
-  background: rgba(15, 14, 19, 0.9); 
+  background: rgba(15, 14, 19, 0.9);
   box-shadow: 0 8px 32px 0 rgba(15, 14, 19, 0.37); /*rgba(41, 81, 227, 0.37); */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 
 .white-glass {
-    background: rgba(15, 14, 19, 0.8); 
-    box-shadow: 0 8px 32px 0 rgba(15, 14, 19, 0.37); /*rgba(41, 81, 227, 0.37); */
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.black-glass {
+  background: rgba(15, 14, 19, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(15, 14, 19, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }

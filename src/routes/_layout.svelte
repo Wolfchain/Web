@@ -10,7 +10,7 @@
 <Nav />
  <!--<Nav {segment} />--> 
 
-  <main>
+
     <slot />
-  </main>
+
 </div>
